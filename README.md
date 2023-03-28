@@ -21,3 +21,8 @@ The question id is passed as an optional parameter.
 ## Example #4 Editor + Test + Console (logging test fails)
 
 <iframe width="800" height="700" src="https://linda-seiter.github.io/prework-sandpack-app?id=4"></iframe>
+
+## Resources
+
+[Sandpack](https://sandpack.codesandbox.io/)
+[CodeMirror](https://codemirror.net/)
