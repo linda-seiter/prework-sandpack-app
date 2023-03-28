@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/prework-sandpack-app/static/css/main.073c9b0a.css",
+    "main.js": "/prework-sandpack-app/static/js/main.1f5e8091.js",
+    "static/js/787.e9883e5a.chunk.js": "/prework-sandpack-app/static/js/787.e9883e5a.chunk.js",
+    "static/media/logo.svg": "/prework-sandpack-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/prework-sandpack-app/index.html",
+    "main.073c9b0a.css.map": "/prework-sandpack-app/static/css/main.073c9b0a.css.map",
+    "main.1f5e8091.js.map": "/prework-sandpack-app/static/js/main.1f5e8091.js.map",
+    "787.e9883e5a.chunk.js.map": "/prework-sandpack-app/static/js/787.e9883e5a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.1f5e8091.js"
+  ]
+}
