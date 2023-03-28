@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  SandpackProvider,
+  SandpackLayout,
+  SandpackTests,
+  SandpackCodeEditor,
+  SandpackConsole,
+  SandpackPreview,
+} from "@codesandbox/sandpack-react";
 
-function App() {
+import { question } from "./question.js";
+
+const files = {
+  "/index.js": {
+    code: question.code,
+  },
+  ...(question.test && {
+    "/index.test.js": {
+      code: question.test,
+    },
+  }),
+};
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SandpackProvider files={files}>
+      <SandpackLayout>
+        <SandpackCodeEditor showLineNumbers showTabs />
+      </SandpackLayout>
+      <SandpackLayout>
+        {question.tests && <SandpackTests verbose="true" />}
+        {question.console && (
+          <SandpackConsole resetOnPreviewRestart="true" standalone="true" />
+        )}
+        {question.preview && <SandpackPreview />}
+      </SandpackLayout>
+    </SandpackProvider>
   );
-}
+};
 
 export default App;
